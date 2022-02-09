@@ -10,7 +10,8 @@
   "version": "0.0.1",
   "dependencies": {
     "debug": "^2.2.0",
-    "xml2js": "^0.4.23",
-    "underscore": "latest"
+    "request": "^2.88.2",
+    "underscore": "latest",
+    "xml2js": "^0.4.23"
   }
 }
