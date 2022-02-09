@@ -1,5 +1,5 @@
 {
-  "name": "MMM-XmlToTable",
+  "name": "mmm-gmailfeed",
   "description": "A Widget that grabs remote XML, converts to json, and sends to the client",
   "keywords": [
     "xml",
