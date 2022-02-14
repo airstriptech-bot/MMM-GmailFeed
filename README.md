@@ -108,3 +108,8 @@ sudo alsactl store
 
 ## Planned Upgrades/Updates
   * Please leave coomments and suggestions!
+
+## Contributors
+ * Thanks to https://github.com/jamescross4 for adding the notification icon and autoHide feature.
+ * Thanks to https://github.com/KristjanESPERANTO for helping keep it up to date with the recent 2.18 of MM.
+ * 
