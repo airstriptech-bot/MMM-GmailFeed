@@ -26,7 +26,7 @@ Configuration:
 
 ## Installation
 ````
-git clone https://github.com/shaneapowell/MMM-GmailFeed.git
+git clone https://github.com/shaneapowell/MMM-GmailFeed
 cd MMM-GmailFeed
 npm install
 ````
