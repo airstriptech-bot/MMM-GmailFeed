@@ -13,7 +13,7 @@ Module.register("MMM-GmailFeed", {
 		maxSubjectLength: 40,
 		maxFromLength: 15,
 		playSound: true,
-		autoHide: true,
+		autoHide: false,
 		displayMode: "table",
 		color: true,
 	},
