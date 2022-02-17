@@ -98,7 +98,7 @@ sudo alsactl store
 ```
 
 ## Planned Upgrades/Updates
-  * Please leave coomments and suggestions!
+  * Please leave comments and suggestions!
 
 ## Contributors
  * Thanks to https://github.com/jamescross4 for adding the notification icon and autoHide feature.
