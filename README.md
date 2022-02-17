@@ -65,15 +65,6 @@ You should be able to use your normal gmail username and password. If you have 2
 - In the "select device" pull down, pick Other. Name it what ever you want.  I called mine "MagicMirror"
 - Click "Generate". That sequence of characters is the "Password" value you should use.
 
-## Credentials
-You should be able to use your normal gmail username and password. If you have 2FA (2 factor auth) enabled however, it's a bit different. You need to create a unique "App Password".
-- Go to your "Manage your Google Account" screen.
-- Select the "Security" link on the left side.
-- Scroll down to find "App Passwords" and select it.
-- In the "select app" pull down, pick Mail.
-- In the "select device" pull down, pick Other. Name it what ever you want.  I called mine "MagicMirror"
-- Click "Generate". That sequence of characters is the "Password" value you should use.
-
 ## Chrome Startup Tricks
 I run my MagicMirror on an ancient rpi-1. It works, but it's not fast. I have it configured to auto-login my normal user into non GUI mode.  I did it this way to avoid using any window manager or login manager of any sort.  My rpi has to little ram for that.   At the end of my users .bashrc file I added..
 ```
@@ -108,3 +99,8 @@ sudo alsactl store
 
 ## Planned Upgrades/Updates
   * Please leave coomments and suggestions!
+
+## Contributors
+ * Thanks to https://github.com/jamescross4 for adding the notification icon and autoHide feature.
+ * Thanks to https://github.com/KristjanESPERANTO for helping keep it up to date with the recent 2.18 of MM.
+ * 
