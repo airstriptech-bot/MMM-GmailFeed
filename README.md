@@ -13,7 +13,7 @@ Auto-Hide enabled:
 ![](autoHideHidden.png)
 
 Notification Mode:
-![](notificationMode.PNG)
+![](notificationMode.png)
 
 Configuration:
 
