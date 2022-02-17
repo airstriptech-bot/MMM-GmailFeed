@@ -1,6 +1,6 @@
 # MMM-GmailFeed
 
-A module for the MagicMirror project which creates a table filled with the current list of unread gmail messages.  This module uses the gmail RSS feed instead of IMAP.
+MMM-GmailFeed is a module for [MagicMirror²](https://github.com/MichMich/MagicMirror) which creates a table filled with the current list of unread gmail messages. This module uses the gmail RSS feed instead of IMAP.
 
 ## Images
 
