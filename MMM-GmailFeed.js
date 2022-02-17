@@ -95,13 +95,14 @@ Module.register("MMM-GmailFeed", {
 	getDom: function () {
 
 		var table = document.createElement("table");
-		
-		if (this.jsonData.fullcount === 0 && this.config.autoHide) {
-			table.classList.add("hidden");
-		} else {
-			table.classList.add("mailtable");
+		table.classList.add("mailtable");
+
+		if (this.jsonData !== null) {
+			if (this.jsonData.fullcount === 0 && this.config.autoHide) {
+				table.classList.add("hidden");
+			}
 		}
-		
+
 		if (this.errorData) {
 			table.innerHTML = this.errorData;
 			return table;
