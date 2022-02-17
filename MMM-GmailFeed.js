@@ -76,14 +76,14 @@ Module.register("MMM-GmailFeed", {
 
 		this.mailCount = this.jsonData.fullcount;
 
-		if (this.config.displayMode == "table") {
-			if (this.jsonData.fullcount == 0 && this.config.autoHide) {
+		if (this.config.displayMode === "table") {
+			if (this.jsonData.fullcount === 0 && this.config.autoHide) {
 				return this.jsonData.title = "";
 			} else {
 				return this.jsonData.title + "  -  " + this.jsonData.fullcount;
 			}
-		} else if (this.config.displayMode == "notification") {
-			/*if (this.jsonData.fullcount == 0 && this.config.autoHide) {*/
+		} else if (this.config.displayMode === "notification") {
+			/*if (this.jsonData.fullcount === 0 && this.config.autoHide) {*/
 				return this.jsonData.title = "";
 			/*} else {
 				return this.jsonData.title = "GMAIL" + "  -  " + this.jsonData.fullcount;
@@ -96,7 +96,7 @@ Module.register("MMM-GmailFeed", {
 
 		var table = document.createElement("table");
 		
-		if (this.jsonData.fullcount == 0 && this.config.autoHide) {
+		if (this.jsonData.fullcount === 0 && this.config.autoHide) {
 			table.classList.add("hidden");
 		} else {
 			table.classList.add("mailtable");
@@ -115,17 +115,17 @@ Module.register("MMM-GmailFeed", {
 		if (!this.jsonData.entry) {
 			var row = document.createElement("tr");
 			table.append(row);
-			if (this.config.displayMode == "table") {
+			if (this.config.displayMode === "table") {
 				var cell = document.createElement("td");
 				row.append(cell);
 				cell.append(document.createTextNode("No New Mail"));
 				cell.setAttribute("colspan", "4");
-				return table; 
+				return table;
 			}
 		}
 
 		var items = this.jsonData.entry;
-		if (this.config.displayMode == "table") {
+		if (this.config.displayMode === "table") {
 		// If the items is null, no new messages
 		if (!items) {
 			return table;
@@ -137,21 +137,21 @@ Module.register("MMM-GmailFeed", {
 			items = [ items ]
 		}
 	
-		if (this.config.displayMode == "table") {
+		if (this.config.displayMode === "table") {
 			items.forEach(element => {
 				var row = this.getTableRow(element);
 				table.appendChild(row);
 			});
-		} else if (this.config.displayMode == "notification") {
+		} else if (this.config.displayMode === "notification") {
 			var z = document.createElement("a");
 			z.setAttribute("height", "50px");
 			z.setAttribute("width", "100px");
 			z.setAttribute("href", "#");
 			z.classList.add("notification");
 			var logo = document.createElement("img");
-			if (this.config.color == true) {
+			if (this.config.color === true) {
 				logo.setAttribute("src", "/modules/MMM-GmailFeed/Gmail-logo.png");
-			} else if (this.config.color == false) {
+			} else if (this.config.color === false) {
 				logo.setAttribute("src", "/modules/MMM-GmailFeed/Gmail-logo-grayscale.png");
 			}
 			logo.setAttribute("height", "50px");
