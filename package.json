@@ -1,17 +1,14 @@
 {
   "name": "mmm-gmailfeed",
-  "description": "A Widget that grabs remote XML, converts to json, and sends to the client",
+  "description": "A module for the MagicMirror² which creates a table with unread gmail messages.",
   "keywords": [
-    "xml",
-    "mirror",
+    "magic mirror",
     "smart mirror",
     "mirror email"
   ],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
-    "debug": "^2.2.0",
     "request": "^2.88.2",
-    "underscore": "latest",
     "xml2js": "^0.4.23"
   }
 }
