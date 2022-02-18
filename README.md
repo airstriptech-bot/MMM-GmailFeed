@@ -90,7 +90,7 @@ unclutter -root &
 
 sed -i 's/"exited_cleanly":false/"exited_cleanly":true/' ~/.config/chromium/Default/Preferences
 sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' ~/.config/chromium/Default/Preferences
-chromium-browser --alsa-output-device=default --noerrordialogs --disable-infobars --app=http://10.0.0.2:8999
+chromium-browser --alsa-output-device=default --noerrordialogs --disable-infobars --autoplay-policy=no-user-gesture-required --app=http://10.0.0.2:899
 ```
 
 The ```-alsa-output-device``` was necessary to force chrome to use alsa instead of PulseAudio.
