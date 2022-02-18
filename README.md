@@ -57,7 +57,7 @@ npm install
 | maxSubjectLength | 40 | Maximum number of characters to show in the subject column |
 | maxFromLength | 15 | Maximum number of characters to show in the from column |
 | playSound | true | Play a notification chime when a new email arrives |
-| autoHide | true | Automatically hide the module when you have no new emails and show the module when you do |
+| autoHide | false | Automatically hide the module when you have no new emails and show the module when you do |
 | displayMode | table | Display module as "table" or "notification" |
 | color | true | If true, notification icon will be in color, if false, notification icon will be in grayscale |
 
