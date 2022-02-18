@@ -76,7 +76,7 @@ Module.register("MMM-GmailFeed", {
     this.mailCount = this.jsonData.fullcount;
 
     if (this.config.displayMode === "table") {
-      if (this.jsonData.fullcount === 0 && this.config.autoHide) {
+      if (this.jsonData.fullcount == 0 && this.config.autoHide) {
         return (this.jsonData.title = "");
       } else {
         return this.jsonData.title + "  -  " + this.jsonData.fullcount;
@@ -95,12 +95,6 @@ Module.register("MMM-GmailFeed", {
     var table = document.createElement("table");
     table.classList.add("mailtable");
 
-    if (this.jsonData !== null) {
-      if (this.jsonData.fullcount === 0 && this.config.autoHide) {
-        table.classList.add("hidden");
-      }
-    }
-
     if (this.errorData) {
       table.innerHTML = this.errorData;
       return table;
@@ -110,6 +104,11 @@ Module.register("MMM-GmailFeed", {
       table.innerHTML = "Loading...";
       return table;
     }
+
+    if (this.jsonData.fullcount == 0 && this.config.autoHide) {
+      table.classList.add("hidden");
+    }
+
 
     if (!this.jsonData.entry) {
       var row = document.createElement("tr");
